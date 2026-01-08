@@ -12,7 +12,6 @@ export class ProfileComponent implements OnInit {
   hashtagStats: { name: string; count: number }[] = [];
 
   constructor(private storage: ReelStorageService) {}
-
   ngOnInit() {
     if (localStorage.getItem('dark') === '1') {
       document.body.classList.add('dark');
