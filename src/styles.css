@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --ig-bg: #000;
+  --ig-card: #121212;
+  --ig-border: #262626;
+  --ig-text: #f5f5f5;
+  --ig-muted: #a8a8a8;
+  --ig-accent: #0095f6;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: var(--ig-bg);
+  color: var(--ig-text);
+}
+
+.ig-card {
+  background: var(--ig-card);
+  border: 1px solid var(--ig-border);
+  color: var(--ig-text);
+  border-radius: 12px;
+}
+
+.ig-muted {
+  color: var(--ig-muted);
+}
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: #000;
+  border-top: 1px solid #262626;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 20px;
+}
+
+.bottom-nav button.active {
+  color: #fff;
+}

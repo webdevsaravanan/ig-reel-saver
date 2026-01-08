@@ -1,0 +1,15 @@
+<h2>{{reel?.title}}</h2>
+<video
+  #player
+  controls
+  playsinline
+  preload="metadata"
+  webkit-playsinline
+  style="width:100%;max-height:70vh;background:#000"
+  (error)="onVideoError()">
+
+  <source [src]="videoMp4Url" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<button (click)="openInstagram()" style="margin-top:10px">Open in Instagram</button>

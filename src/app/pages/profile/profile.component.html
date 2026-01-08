@@ -1,0 +1,21 @@
+<div class="container py-3">
+
+  <!-- Header -->
+<app-header></app-header>
+<h4 class="mb-3">Profile</h4>
+
+<div class="ig-card p-3 mb-3">
+  <div>Total Reels: <strong>{{ total }}</strong></div>
+  <div>Favorites: <strong>{{ favorites }}</strong></div>
+</div>
+
+<div class="ig-card p-3">
+  <h6>Hashtags</h6>
+  <div *ngFor="let h of hashtagStats" class="d-flex justify-content-between">
+    <span>#{{ h.name }}</span>
+    <span>{{ h.count }}</span>
+  </div>
+</div>
+
+<app-bottom-nav active="profile"></app-bottom-nav>
+</div>

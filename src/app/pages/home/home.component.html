@@ -1,0 +1,43 @@
+<div class="container py-3">
+
+  <!-- Header -->
+    <app-header></app-header>
+
+  <!-- Search box -->
+  <input
+    #SearchText
+    class="form-control mb-3 bg-dark text-light border-0"
+    placeholder="Search reels"
+    (input)="search(SearchText.value)"
+  />
+
+  <!-- Reel list -->
+  <div *ngFor="let r of results"
+       class="ig-card p-3 mb-2"
+       (touchstart)="startSwipe($event, r)"
+       (touchend)="endSwipe($event, r)">
+
+    <div class="d-flex justify-content-between align-items-start">
+
+      <!-- Title & hashtags -->
+      <div (click)="open(r)">
+        <div class="fw-semibold">{{ r.title }}</div>
+        <div class="ig-muted small">
+          #{{ r.hashtags.join(' #') }}
+        </div>
+      </div>
+
+      <!-- Favorite -->
+      <button
+        class="btn btn-sm"
+        (click)="toggleFavorite(r); $event.stopPropagation()">
+        {{ r.favorite ? '⭐' : '☆' }}
+      </button>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Bottom Nav -->
+<app-bottom-nav active="search"></app-bottom-nav>

@@ -1,0 +1,24 @@
+<nav class="bottom-nav">
+  <button
+    [class.active]="active === 'search'"
+    (click)="goSearch()">
+    🔍
+  </button>
+
+  <button
+    [class.active]="active === 'favorite'"
+    (click)="goFavorites()">
+    ⭐
+  </button>
+
+  <button
+    (click)="goAdd()">
+    ➕
+  </button>
+
+  <button
+    [class.active]="active === 'profile'"
+    (click)="goProfile()">
+    👤
+  </button>
+</nav>

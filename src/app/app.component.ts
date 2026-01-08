@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: '<router-outlet></router-outlet>',
+  standalone: false
 })
-export class AppComponent {
-  title = 'ig-reel-saver';
+export class AppComponent implements OnInit {
+  constructor(private router: Router) {}
+  ngOnInit() {
+    const shared = new URLSearchParams(window.location.search).get('text');
+    if (shared?.includes('instagram.com/reel')) {
+      this.router.navigate(['/add'], { queryParams: { reelUrl: shared } });
+    }
+  }
 }
