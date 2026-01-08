@@ -8,9 +8,17 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit {
   constructor(private router: Router) {}
   ngOnInit() {
-    const shared = new URLSearchParams(window.location.search).get('text');
-    if (shared?.includes('instagram.com/reel')) {
-      this.router.navigate(['/add'], { queryParams: { reelUrl: shared } });
-    }
+     const params = new URLSearchParams(window.location.search);
+
+    // Android share intent sends text
+    const sharedUrl =
+      params.get('url') ||
+      params.get('text') ||
+      params.get('sharedText');
+
+    if (sharedUrl?.includes('instagram.com')) {
+      this.router.navigate(['/add'], {
+        queryParams: { reelUrl: sharedUrl }
+      });
   }
 }
