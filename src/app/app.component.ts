@@ -7,19 +7,17 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   constructor(private router: Router) {}
+  
   ngOnInit() {
-     const params = new URLSearchParams(window.location.search);
+    const params = new URLSearchParams(window.location.search);
+     const sharedUrl =
+    params.get('text') ||
+    params.get('android.intent.extra.TEXT');
 
-    // Android share intent sends text
-    const sharedUrl =
-      params.get('url') ||
-      params.get('text') ||
-      params.get('sharedText');
-
-    if (sharedUrl?.includes('instagram.com')) {
-      this.router.navigate(['/add'], {
-        queryParams: { reelUrl: sharedUrl }
-      });
+  if (sharedUrl && sharedUrl.includes('instagram.com/reel')) {
+    this.router.navigate(['/add'], {
+      queryParams: { reelUrl: sharedUrl }
+    });
   }
 }
 }
