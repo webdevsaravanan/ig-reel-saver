@@ -13,15 +13,17 @@ export class AppComponent implements OnInit {
       const sharedText = params['text'] || params['android.intent.extra.TEXT'];
       if (sharedText) {
         // Handle the shared content here
-        console.log('Shared content:', sharedText);
+        alert('Shared content:' + sharedText);
         // For example, if it's an Instagram URL, navigate to add page
         if (sharedText.includes('instagram.com')) {
           this.router.navigate(['/add'], {
             queryParams: { reelUrl: sharedText }
           });
         } else {
+          alert('Shared content:' + params);
           // Handle other shared content, e.g., display it or process it
           // For now, just log it
+          
         }
       }
     });
