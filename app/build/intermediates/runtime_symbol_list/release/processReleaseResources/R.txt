@@ -956,10 +956,9 @@ int string no_provider_toast 0x7f0e0032
 int string orientation 0x7f0e0033
 int string providerAuthority 0x7f0e0034
 int string search_menu_title 0x7f0e0035
-int string shareTarget 0x7f0e0036
-int string status_bar_notification_info_overflow 0x7f0e0037
-int string update_chrome_toast 0x7f0e0038
-int string webManifestUrl 0x7f0e0039
+int string status_bar_notification_info_overflow 0x7f0e0036
+int string update_chrome_toast 0x7f0e0037
+int string webManifestUrl 0x7f0e0038
 int style AlertDialog_AppCompat 0x7f0f0000
 int style AlertDialog_AppCompat_Light 0x7f0f0001
 int style Animation_AppCompat_Dialog 0x7f0f0002

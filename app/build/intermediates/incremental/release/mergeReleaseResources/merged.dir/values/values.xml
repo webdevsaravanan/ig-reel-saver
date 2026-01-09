@@ -349,7 +349,6 @@
     <string name="orientation" translatable="false">default</string>
     <string name="providerAuthority" translatable="false">io.github.webdevsaravanan.twa.fileprovider</string>
     <string name="search_menu_title">Search</string>
-    <string name="shareTarget" translatable="false">{\"action\":\"android.intent.action.SEND\",\"enctype\":\"application/x-www-form-urlencoded\",\"method\":\"GET\",\"params\":{\"text\":\"android.intent.extra.TEXT\"}}</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="update_chrome_toast">Please update to Chrome Stable 72 or later.</string>
     <string name="webManifestUrl" translatable="false">https://webdevsaravanan.github.io/ig-reel-saver/manifest.webmanifest</string>

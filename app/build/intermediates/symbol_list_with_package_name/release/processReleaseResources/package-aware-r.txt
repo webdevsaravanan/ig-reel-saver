@@ -957,7 +957,6 @@ string no_provider_toast
 string orientation
 string providerAuthority
 string search_menu_title
-string shareTarget
 string status_bar_notification_info_overflow
 string update_chrome_toast
 string webManifestUrl
