@@ -14,8 +14,8 @@ export class AppComponent implements OnInit {
       if (sharedText) {
         // Handle the shared content here
         console.log('Shared content:', sharedText);
-        // For example, if it's a URL, navigate to add page
-        if (sharedText.includes('instagram.com/reel')) {
+        // For example, if it's an Instagram URL, navigate to add page
+        if (sharedText.includes('instagram.com')) {
           this.router.navigate(['/add'], {
             queryParams: { reelUrl: sharedText }
           });

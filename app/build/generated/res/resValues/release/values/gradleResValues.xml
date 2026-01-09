@@ -42,7 +42,7 @@
     <!-- Value from default config. -->
     <string name="providerAuthority" translatable="false">io.github.webdevsaravanan.twa.fileprovider</string>
     <!-- Value from default config. -->
-    <string name="shareTarget" translatable="false">{\"action\":\"android.intent.action.SEND\",\"method\":\"GET\",\"params\":{\"text\":\"android.intent.extra.TEXT\"}}</string>
+    <string name="shareTarget" translatable="false">{\"action\":\"android.intent.action.SEND\",\"enctype\":\"application/x-www-form-urlencoded\",\"method\":\"GET\",\"params\":{\"text\":\"android.intent.extra.TEXT\"}}</string>
     <!-- Value from default config. -->
     <string name="webManifestUrl" translatable="false">https://webdevsaravanan.github.io/ig-reel-saver/manifest.webmanifest</string>
 
