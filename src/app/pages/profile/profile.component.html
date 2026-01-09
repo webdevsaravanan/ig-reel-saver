@@ -13,10 +13,12 @@
 <div class="ig-card p-3">
   <h6>Hashtags</h6>
   <div *ngFor="let h of hashtagStats" class="d-flex justify-content-between">
-    <span>#{{ h.name }}</span>
+    <span (click)="openHashtag(h.name)">#{{ h.name }} </span>
     <span>{{ h.count }}</span>
   </div>
 </div>
 </div>
+<br/>
+<br/>
 <app-bottom-nav active="profile"></app-bottom-nav>
 </div>

@@ -21,6 +21,10 @@ export class HomeComponent implements OnInit {
     }
     this.route.queryParams.subscribe(params => {
       this.isFavoriteView = params['view'] === 'favorite';
+      if(params['searchQuery'])
+      {this.search(params['searchQuery'] || '');
+      return;
+      }
       this.load();
     });
   }

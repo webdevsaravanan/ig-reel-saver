@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ReelStorageService } from '../../services/reel-storage.service';
-
+import { Router } from '@angular/router';  
 @Component({
   templateUrl: './profile.component.html',
   standalone: false
@@ -11,7 +11,7 @@ export class ProfileComponent implements OnInit {
   favorites = 0;
   hashtagStats: { name: string; count: number }[] = [];
 
-  constructor(private storage: ReelStorageService) {}
+  constructor(private storage: ReelStorageService, private router: Router) {}
   ngOnInit() {
     if (localStorage.getItem('dark') === '1') {
       document.body.classList.add('dark');
@@ -31,5 +31,10 @@ export class ProfileComponent implements OnInit {
     this.hashtagStats = Object.keys(map)
       .map(k => ({ name: k, count: map[k] }))
       .sort((a, b) => b.count - a.count);
+
+      
   }
+  openHashtag(hashtag: string) {
+    this.router.navigate(['/'], { queryParams: { searchQuery: hashtag } });
+      }
 }
