@@ -3,7 +3,7 @@
   "host": "webdevsaravanan.github.io",
   "name": "ig-reel-saver",
   "launcherName": "ig-reel-saver",
-  "display": "standalone",
+  "display": "fullscreen",
   "themeColor": "#1976D2",
   "themeColorDark": "#000000",
   "navigationColor": "#000000",
@@ -20,8 +20,8 @@
     "path": "C:\\Angular_Workspace\\Angular_learnings\\ig-reel-saver\\android.keystore",
     "alias": "android"
   },
-  "appVersionName": "Alpha",
-  "appVersionCode": 9,
+  "appVersionName": "Beta",
+  "appVersionCode": 10,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://webdevsaravanan.github.io/ig-reel-saver/manifest.webmanifest",
@@ -56,5 +56,5 @@
   "fileHandlers": [],
   "launchHandlerClientMode": "",
   "displayOverride": [],
-  "appVersion": "Alpha"
+  "appVersion": "Beta"
 }

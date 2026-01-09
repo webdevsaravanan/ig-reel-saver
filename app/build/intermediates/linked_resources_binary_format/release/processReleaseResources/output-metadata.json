@@ -11,8 +11,8 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 9,
-      "versionName": "Alpha",
+      "versionCode": 10,
+      "versionName": "Beta",
       "outputFile": "linked-resources-binary-format-release.ap_"
     }
   ],
