@@ -127,10 +127,6 @@
                 android:value="@string/fallbackType" />
 
             
-                <meta-data
-                    android:name="android.support.customtabs.trusted.METADATA_SHARE_TARGET"
-                    android:resource="@string/shareTarget"/>
-            
 
             
 
@@ -141,16 +137,6 @@
 
             
 
-            
-                <intent-filter>
-                    
-                        <action android:name="android.intent.action.SEND" />
-                    
-                    <category android:name="android.intent.category.DEFAULT" />
-                    
-                        <data android:mimeType="text/plain" />
-                    
-                </intent-filter>
             
 
             <intent-filter>

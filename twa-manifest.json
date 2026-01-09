@@ -20,8 +20,8 @@
     "path": "C:\\Angular_Workspace\\Angular_learnings\\ig-reel-saver\\android.keystore",
     "alias": "android"
   },
-  "appVersionName": "4",
-  "appVersionCode": 4,
+  "appVersionName": "7",
+  "appVersionCode": 7,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://webdevsaravanan.github.io/ig-reel-saver/manifest.webmanifest",
@@ -35,21 +35,17 @@
   "isMetaQuest": false,
   "fullScopeUrl": "https://webdevsaravanan.github.io/ig-reel-saver/",
   "minSdkVersion": 21,
-  "shareTarget": {
-    "action": "android.intent.action.SEND",
-    "enctype": "application/x-www-form-urlencoded",
-    "method": "GET",
-    "params": {
-      "text": "android.intent.extra.TEXT"
-    }
-  },
   "orientation": "default",
-  "fingerprints": [],
+  "fingerprints": [
+    {
+      "value": "F4:33:A9:78:84:7C:84:95:0D:D0:D0:E9:A3:0F:77:89:E7:62:7E:AE:DF:1D:D2:F0:D7:E9:51:EA:08:80:FF:9D"
+    }
+  ],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
   "protocolHandlers": [],
   "fileHandlers": [],
   "launchHandlerClientMode": "",
   "displayOverride": [],
-  "appVersion": "4"
+  "appVersion": "7"
 }
