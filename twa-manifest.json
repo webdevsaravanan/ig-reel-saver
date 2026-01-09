@@ -13,13 +13,6 @@
   "backgroundColor": "#000000",
   "enableNotifications": true,
   "startUrl": "/ig-reel-saver/",
-  "shareTarget": {
-  "action": "android.intent.action.SEND",
-  "method": "GET",
-  "params": {
-    "text": "text"
-  }
-},
   "iconUrl": "https://webdevsaravanan.github.io/ig-reel-saver/icons/icon-512x512.png",
   "maskableIconUrl": "https://webdevsaravanan.github.io/ig-reel-saver/icons/icon-512x512.png",
   "splashScreenFadeOutDuration": 300,
@@ -27,8 +20,8 @@
     "path": "C:\\Angular_Workspace\\Angular_learnings\\ig-reel-saver\\android.keystore",
     "alias": "android"
   },
-  "appVersionName": "1",
-  "appVersionCode": 1,
+  "appVersionName": "3",
+  "appVersionCode": 3,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://webdevsaravanan.github.io/ig-reel-saver/manifest.webmanifest",
@@ -42,6 +35,14 @@
   "isMetaQuest": false,
   "fullScopeUrl": "https://webdevsaravanan.github.io/ig-reel-saver/",
   "minSdkVersion": 21,
+  "shareTarget": {
+    "action": "android.intent.action.SEND",
+    "enctype": "application/x-www-form-urlencoded",
+    "method": "GET",
+    "params": {
+      "text": "android.intent.extra.TEXT"
+    }
+  },
   "orientation": "default",
   "fingerprints": [],
   "additionalTrustedOrigins": [],
@@ -50,5 +51,5 @@
   "fileHandlers": [],
   "launchHandlerClientMode": "",
   "displayOverride": [],
-  "appVersion": "1"
+  "appVersion": "3"
 }

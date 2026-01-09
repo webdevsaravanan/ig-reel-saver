@@ -57,8 +57,8 @@ android {
         applicationId "io.github.webdevsaravanan.twa"
         minSdkVersion 21
         targetSdkVersion 35
-        versionCode 1
-        versionName "1"
+        versionCode 3
+        versionName "3"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
@@ -84,6 +84,9 @@ android {
             resValue "string", "fullScopeUrl", 'https://webdevsaravanan.github.io/ig-reel-saver/'
         
 
+        
+            // The data for the app to support web share target.
+            resValue "string", "shareTarget", '{\\"action\\":\\"android.intent.action.SEND\\",\\"method\\":\\"GET\\",\\"params\\":{\\"text\\":\\"android.intent.extra.TEXT\\"}}'
         
 
         // The hostname is used when building the intent-filter, so the TWA is able to

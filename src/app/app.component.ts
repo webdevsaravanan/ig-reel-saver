@@ -1,23 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-root',
   template: '<router-outlet></router-outlet>',
   standalone: false
 })
 export class AppComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private route: ActivatedRoute) {}
   
   ngOnInit() {
-    const params = new URLSearchParams(window.location.search);
-     const sharedUrl =
-    params.get('text') ||
-    params.get('android.intent.extra.TEXT');
-
-  if (sharedUrl && sharedUrl.includes('instagram.com/reel')) {
-    this.router.navigate(['/add'], {
-      queryParams: { reelUrl: sharedUrl }
+    this.route.queryParams.subscribe(params => {
+      const sharedText = params['text'] || params['android.intent.extra.TEXT'];
+      if (sharedText) {
+        // Handle the shared content here
+        console.log('Shared content:', sharedText);
+        // For example, if it's a URL, navigate to add page
+        if (sharedText.includes('instagram.com/reel')) {
+          this.router.navigate(['/add'], {
+            queryParams: { reelUrl: sharedText }
+          });
+        } else {
+          // Handle other shared content, e.g., display it or process it
+          // For now, just log it
+        }
+      }
     });
   }
-}
 }

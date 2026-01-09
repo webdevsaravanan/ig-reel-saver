@@ -1,0 +1,407 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3    Copyright 2019 Google Inc. All Rights Reserved.
+4
+5     Licensed under the Apache License, Version 2.0 (the "License");
+6     you may not use this file except in compliance with the License.
+7     You may obtain a copy of the License at
+8
+9         http://www.apache.org/licenses/LICENSE-2.0
+10
+11     Unless required by applicable law or agreed to in writing, software
+12     distributed under the License is distributed on an "AS IS" BASIS,
+13     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14     See the License for the specific language governing permissions and
+15     limitations under the License.
+16-->
+17<!--
+18 The "package" attribute is rewritten by the Gradle build with the value of applicationId.
+19     It is still required here, as it is used to derive paths, for instance when referring
+20     to an Activity by ".MyActivity" instead of the full name. If more Activities are added to the
+21     application, the package attribute will need to reflect the correct path in order to use
+22     the abbreviated format.
+23-->
+24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+25    package="io.github.webdevsaravanan.twa"
+26    android:versionCode="3"
+27    android:versionName="3" >
+28
+29    <uses-sdk
+30        android:minSdkVersion="21"
+31        android:targetSdkVersion="35" />
+32
+33    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+33-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:26:9-80
+33-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:26:26-78
+34
+35    <queries>
+35-->[com.google.androidbrowserhelper:androidbrowserhelper:2.6.2] C:\Users\webde\.gradle\caches\8.11.1\transforms\5053e02be90783e54992393be394bb70\transformed\androidbrowserhelper-2.6.2\AndroidManifest.xml:22:5-30:15
+36        <intent>
+36-->[com.google.androidbrowserhelper:androidbrowserhelper:2.6.2] C:\Users\webde\.gradle\caches\8.11.1\transforms\5053e02be90783e54992393be394bb70\transformed\androidbrowserhelper-2.6.2\AndroidManifest.xml:23:9-29:18
+37            <action android:name="android.intent.action.VIEW" />
+37-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:162:17-68
+37-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:162:25-66
+38
+39            <category android:name="android.intent.category.BROWSABLE" />
+39-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:164:17-77
+39-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:164:27-75
+40
+41            <data android:scheme="https" />
+41-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:151:25-63
+41-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:165:23-45
+42        </intent>
+43    </queries>
+44
+45    <permission
+45-->[androidx.core:core:1.13.0] C:\Users\webde\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+46        android:name="io.github.webdevsaravanan.twa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.13.0] C:\Users\webde\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.13.0] C:\Users\webde\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+48
+49    <uses-permission android:name="io.github.webdevsaravanan.twa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.13.0] C:\Users\webde\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+49-->[androidx.core:core:1.13.0] C:\Users\webde\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+50
+51    <application
+51-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:35:5-215:19
+52        android:name="io.github.webdevsaravanan.twa.Application"
+52-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:36:9-35
+53        android:allowBackup="true"
+53-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:37:9-35
+54        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+54-->[androidx.core:core:1.13.0] C:\Users\webde\.gradle\caches\8.11.1\transforms\a5429f7b20c607b890f08b5283ad4ec0\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+55        android:extractNativeLibs="true"
+56        android:icon="@mipmap/ic_launcher"
+56-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:38:9-43
+57        android:label="@string/appName"
+57-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:39:9-40
+58        android:manageSpaceActivity="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity"
+58-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:41:9-105
+59        android:supportsRtl="true"
+59-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:43:9-35
+60        android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+60-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:44:9-68
+61        <meta-data
+61-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:46:9-48:58
+62            android:name="asset_statements"
+62-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:47:13-44
+63            android:resource="@string/assetStatements" />
+63-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:48:13-55
+64        <meta-data
+64-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:51:13-53:58
+65            android:name="web_manifest_url"
+65-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:52:17-48
+66            android:value="@string/webManifestUrl" />
+66-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:53:17-55
+67        <meta-data
+67-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:56:9-58:52
+68            android:name="twa_generator"
+68-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:57:13-41
+69            android:value="@string/generatorApp" />
+69-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:58:13-49
+70
+71        <activity
+71-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:65:13-76:24
+72            android:name="com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity"
+72-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:65:23-104
+73            android:enabled="true"
+73-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:67:17-39
+74            android:excludeFromRecents="true"
+74-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:68:17-50
+75            android:exported="false" >
+75-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:66:17-41
+76            <meta-data
+76-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:69:17-71:57
+77                android:name="android.support.customtabs.trusted.MANAGE_SPACE_URL"
+77-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:70:21-87
+78                android:value="@string/launchUrl" />
+78-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:71:21-54
+79
+80            <intent-filter>
+80-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:72:17-75:33
+81                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+81-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:73:21-92
+81-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:73:29-89
+82
+83                <category android:name="android.intent.category.DEFAULT" />
+83-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:74:21-80
+83-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:74:31-77
+84            </intent-filter>
+85        </activity>
+86        <activity
+86-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:79:9-176:20
+87            android:name="io.github.webdevsaravanan.twa.LauncherActivity"
+87-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:79:19-50
+88            android:alwaysRetainTaskState="true"
+88-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:80:13-49
+89            android:exported="true"
+89-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:82:13-36
+90            android:label="@string/launcherName" >
+90-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:81:13-49
+91            <meta-data
+91-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:83:13-84:53
+92                android:name="android.support.customtabs.trusted.DEFAULT_URL"
+92-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:83:24-85
+93                android:value="@string/launchUrl" />
+93-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:84:17-50
+94            <meta-data
+94-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:86:13-88:58
+95                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR"
+95-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:87:17-83
+96                android:resource="@color/colorPrimary" />
+96-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:88:17-55
+97            <meta-data
+97-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:92:13-94:62
+98                android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR_DARK"
+98-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:93:17-88
+99                android:resource="@color/colorPrimaryDark" />
+99-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:94:17-59
+100            <meta-data
+100-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:96:13-98:61
+101                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR"
+101-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:97:17-87
+102                android:resource="@color/navigationColor" />
+102-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:98:17-58
+103            <meta-data
+103-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:100:13-102:65
+104                android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR_DARK"
+104-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:101:17-92
+105                android:resource="@color/navigationColorDark" />
+105-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:102:17-62
+106            <meta-data
+106-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:104:13-106:68
+107                android:name="androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR"
+107-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:105:17-84
+108                android:resource="@color/navigationDividerColor" />
+108-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:106:17-65
+109            <meta-data
+109-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:108:13-110:72
+110                android:name="androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR_DARK"
+110-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:109:17-89
+111                android:resource="@color/navigationDividerColorDark" />
+111-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:110:17-69
+112            <meta-data
+112-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:112:13-113:54
+113                android:name="android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE"
+113-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:112:24-95
+114                android:resource="@drawable/splash" />
+114-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:113:17-52
+115            <meta-data
+115-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:115:13-116:60
+116                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR"
+116-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:115:24-104
+117                android:resource="@color/backgroundColor" />
+117-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:116:17-58
+118            <meta-data
+118-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:118:13-119:71
+119                android:name="android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION"
+119-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:118:24-105
+120                android:value="@integer/splashScreenFadeOutDuration" />
+120-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:119:17-69
+121            <meta-data
+121-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:121:13-122:60
+122                android:name="android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY"
+122-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:121:24-97
+123                android:value="@string/providerAuthority" />
+123-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:122:17-58
+124            <meta-data
+124-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:124:13-97
+125                android:name="android.app.shortcuts"
+125-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:124:24-60
+126                android:resource="@xml/shortcuts" />
+126-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:124:61-94
+127            <meta-data
+127-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:126:13-127:56
+128                android:name="android.support.customtabs.trusted.FALLBACK_STRATEGY"
+128-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:126:24-91
+129                android:value="@string/fallbackType" />
+129-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:127:17-53
+130            <meta-data
+130-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:130:17-132:61
+131                android:name="android.support.customtabs.trusted.METADATA_SHARE_TARGET"
+131-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:131:21-92
+132                android:resource="@string/shareTarget" />
+132-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:132:21-59
+133            <meta-data
+133-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:137:13-138:54
+134                android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
+134-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:137:24-92
+135                android:value="@string/orientation" />
+135-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:138:17-52
+136
+137            <intent-filter>
+137-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:145:17-153:33
+138                <action android:name="android.intent.action.SEND" />
+138-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:147:25-77
+138-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:147:33-74
+139
+140                <category android:name="android.intent.category.DEFAULT" />
+140-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:74:21-80
+140-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:74:31-77
+141
+142                <data android:mimeType="text/plain" />
+142-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:151:25-63
+142-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:151:31-60
+143            </intent-filter>
+144            <intent-filter>
+144-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:156:13-159:29
+145                <action android:name="android.intent.action.MAIN" />
+145-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:157:17-69
+145-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:157:25-66
+146
+147                <category android:name="android.intent.category.LAUNCHER" />
+147-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:158:17-77
+147-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:158:27-74
+148            </intent-filter>
+149            <intent-filter android:autoVerify="true" >
+149-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:161:13-171:29
+149-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:161:28-53
+150                <action android:name="android.intent.action.VIEW" />
+150-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:162:17-68
+150-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:162:25-66
+151
+152                <category android:name="android.intent.category.DEFAULT" />
+152-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:74:21-80
+152-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:74:31-77
+153                <category android:name="android.intent.category.BROWSABLE" />
+153-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:164:17-77
+153-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:164:27-75
+154
+155                <data
+155-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:151:25-63
+156                    android:host="@string/hostName"
+156-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:166:21-52
+157                    android:pathPrefix="/ig-reel-saver/"
+157-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:168:21-57
+158                    android:scheme="https" />
+158-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:165:23-45
+159            </intent-filter>
+160        </activity>
+161        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
+161-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:178:9-90
+161-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:178:19-87
+162        <activity
+162-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:180:9-181:62
+163            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+163-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:180:19-97
+164            android:configChanges="orientation|screenSize" />
+164-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:181:13-59
+165
+166        <provider
+166-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:183:9-191:20
+167            android:name="androidx.core.content.FileProvider"
+167-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:184:13-62
+168            android:authorities="@string/providerAuthority"
+168-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:185:13-60
+169            android:exported="false"
+169-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:187:13-37
+170            android:grantUriPermissions="true" >
+170-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:186:13-47
+171            <meta-data
+171-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:188:13-190:53
+172                android:name="android.support.FILE_PROVIDER_PATHS"
+172-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:189:17-67
+173                android:resource="@xml/filepaths" />
+173-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:190:17-50
+174        </provider>
+175
+176        <service
+176-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:193:9-208:19
+177            android:name="io.github.webdevsaravanan.twa.DelegationService"
+177-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:194:13-46
+178            android:enabled="@bool/enableNotification"
+178-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:195:13-55
+179            android:exported="@bool/enableNotification" >
+179-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:196:13-56
+180            <meta-data
+180-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:199:17-201:73
+181                android:name="android.support.customtabs.trusted.SMALL_ICON"
+181-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:200:21-81
+182                android:resource="@drawable/ic_notification_icon" />
+182-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:201:21-70
+183
+184            <intent-filter>
+184-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:204:13-207:29
+185                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
+185-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:205:17-105
+185-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:205:25-103
+186
+187                <category android:name="android.intent.category.DEFAULT" />
+187-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:74:21-80
+187-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:74:31-77
+188            </intent-filter>
+189        </service>
+190
+191        <activity android:name="com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity" />
+191-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:211:13-118
+191-->C:\Angular_Workspace\Angular_learnings\ig-reel-saver\app\src\main\AndroidManifest.xml:211:23-115
+192
+193        <provider
+193-->[androidx.emoji2:emoji2:1.3.0] C:\Users\webde\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+194            android:name="androidx.startup.InitializationProvider"
+194-->[androidx.emoji2:emoji2:1.3.0] C:\Users\webde\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+195            android:authorities="io.github.webdevsaravanan.twa.androidx-startup"
+195-->[androidx.emoji2:emoji2:1.3.0] C:\Users\webde\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+196            android:exported="false" >
+196-->[androidx.emoji2:emoji2:1.3.0] C:\Users\webde\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+197            <meta-data
+197-->[androidx.emoji2:emoji2:1.3.0] C:\Users\webde\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+198                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+198-->[androidx.emoji2:emoji2:1.3.0] C:\Users\webde\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+199                android:value="androidx.startup" />
+199-->[androidx.emoji2:emoji2:1.3.0] C:\Users\webde\.gradle\caches\8.11.1\transforms\5cb7738f5242d8c4e38c8ffa2b265b31\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+200            <meta-data
+200-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\webde\.gradle\caches\8.11.1\transforms\4bc52031417e9743197e36b704fe409f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+201                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+201-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\webde\.gradle\caches\8.11.1\transforms\4bc52031417e9743197e36b704fe409f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+202                android:value="androidx.startup" />
+202-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\webde\.gradle\caches\8.11.1\transforms\4bc52031417e9743197e36b704fe409f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+203            <meta-data
+203-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+204                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+204-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+205                android:value="androidx.startup" />
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+206        </provider>
+207
+208        <receiver
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+209            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+209-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+210            android:directBootAware="false"
+210-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+211            android:enabled="true"
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+212            android:exported="true"
+212-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+213            android:permission="android.permission.DUMP" >
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+214            <intent-filter>
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+215                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+215-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+215-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+216            </intent-filter>
+217            <intent-filter>
+217-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+218                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+218-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+218-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+219            </intent-filter>
+220            <intent-filter>
+220-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+221                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+221-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+221-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+222            </intent-filter>
+223            <intent-filter>
+223-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+224                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+224-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+224-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\webde\.gradle\caches\8.11.1\transforms\bb4a0d32d1b17a1dcea0cf71d2bde5e0\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+225            </intent-filter>
+226        </receiver>
+227    </application>
+228
+229</manifest>
