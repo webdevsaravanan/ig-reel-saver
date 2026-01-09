@@ -8,9 +8,9 @@
     <!-- Value from default config. -->
     <bool name="enableSiteSettingsShortcut">true</bool>
     <!-- Value from default config. -->
-    <color name="backgroundColor">#000000</color>
+    <color name="backgroundColor">#FAFAFA</color>
     <!-- Value from default config. -->
-    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimary">#1976D2</color>
     <!-- Value from default config. -->
     <color name="colorPrimaryDark">#000000</color>
     <!-- Value from default config. -->
@@ -24,7 +24,7 @@
     <!-- Value from default config. -->
     <integer name="splashScreenFadeOutDuration">300</integer>
     <!-- Value from default config. -->
-    <string name="appName" translatable="false">Ig Reel Saver</string>
+    <string name="appName" translatable="false">ig-reel-saver</string>
     <!-- Value from default config. -->
     <string name="fallbackType" translatable="false">customtabs</string>
     <!-- Value from default config. -->
@@ -36,11 +36,13 @@
     <!-- Value from default config. -->
     <string name="launchUrl" translatable="false">https://webdevsaravanan.github.io/ig-reel-saver/</string>
     <!-- Value from default config. -->
-    <string name="launcherName" translatable="false">ig-reels</string>
+    <string name="launcherName" translatable="false">ig-reel-saver</string>
     <!-- Value from default config. -->
     <string name="orientation" translatable="false">default</string>
     <!-- Value from default config. -->
     <string name="providerAuthority" translatable="false">io.github.webdevsaravanan.twa.fileprovider</string>
+    <!-- Value from default config. -->
+    <string name="shareTarget" translatable="false">{\"action\":\"https://webdevsaravanan.github.io/ig-reel-saver/\",\"method\":\"GET\",\"params\":{\"title\":\"title\",\"text\":\"text\",\"url\":\"url\"}}</string>
     <!-- Value from default config. -->
     <string name="webManifestUrl" translatable="false">https://webdevsaravanan.github.io/ig-reel-saver/manifest.webmanifest</string>
 

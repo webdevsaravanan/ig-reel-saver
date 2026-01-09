@@ -27,6 +27,7 @@ string launchUrl
 string launcherName
 string orientation
 string providerAuthority
+string shareTarget
 string webManifestUrl
 xml filepaths
 xml shortcuts

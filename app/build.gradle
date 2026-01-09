@@ -24,15 +24,15 @@ def twaManifest = [
     applicationId: 'io.github.webdevsaravanan.twa',
     hostName: 'webdevsaravanan.github.io', // The domain being opened in the TWA.
     launchUrl: '/ig-reel-saver/', // The start path for the TWA. Must be relative to the domain.
-    name: 'Ig Reel Saver', // The application name.
-    launcherName: 'ig-reels', // The name shown on the Android Launcher.
-    themeColor: '#000000', // The color used for the status bar.
+    name: 'ig-reel-saver', // The application name.
+    launcherName: 'ig-reel-saver', // The name shown on the Android Launcher.
+    themeColor: '#1976D2', // The color used for the status bar.
     themeColorDark: '#000000', // The color used for the dark status bar.
     navigationColor: '#000000', // The color used for the navigation bar.
     navigationColorDark: '#000000', // The color used for the dark navbar.
     navigationDividerColor: '#000000', // The navbar divider color.
     navigationDividerColorDark: '#000000', // The dark navbar divider color.
-    backgroundColor: '#000000', // The color used for the splash screen background.
+    backgroundColor: '#FAFAFA', // The color used for the splash screen background.
     enableNotifications: true, // Set to true to enable notification delegation.
     // Every shortcut must include the following fields:
     // - name: String that will show up in the shortcut.
@@ -57,8 +57,8 @@ android {
         applicationId "io.github.webdevsaravanan.twa"
         minSdkVersion 21
         targetSdkVersion 35
-        versionCode 7
-        versionName "7"
+        versionCode 9
+        versionName "Alpha"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name
@@ -84,6 +84,9 @@ android {
             resValue "string", "fullScopeUrl", 'https://webdevsaravanan.github.io/ig-reel-saver/'
         
 
+        
+            // The data for the app to support web share target.
+            resValue "string", "shareTarget", '{\\"action\\":\\"https://webdevsaravanan.github.io/ig-reel-saver/\\",\\"method\\":\\"GET\\",\\"params\\":{\\"title\\":\\"title\\",\\"text\\":\\"text\\",\\"url\\":\\"url\\"}}'
         
 
         // The hostname is used when building the intent-filter, so the TWA is able to

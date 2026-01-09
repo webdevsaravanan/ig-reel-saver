@@ -2,8 +2,8 @@
 <resources>
     <bool name="enableNotification">true</bool>
     <bool name="enableSiteSettingsShortcut">true</bool>
-    <color name="backgroundColor">#000000</color>
-    <color name="colorPrimary">#000000</color>
+    <color name="backgroundColor">#FAFAFA</color>
+    <color name="colorPrimary">#1976D2</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="navigationColor">#000000</color>
     <color name="navigationColorDark">#000000</color>
@@ -11,7 +11,7 @@
     <color name="navigationDividerColorDark">#000000</color>
     <color name="shortcut_background">#F5F5F5</color>
     <integer name="splashScreenFadeOutDuration">300</integer>
-    <string name="appName" translatable="false">Ig Reel Saver</string>
+    <string name="appName" translatable="false">ig-reel-saver</string>
     <string name="assetStatements">
     [{
         \"relation\": [\"delegate_permission/common.handle_all_urls\"],
@@ -27,8 +27,9 @@
     <string name="generatorApp" translatable="false">bubblewrap-cli</string>
     <string name="hostName" translatable="false">webdevsaravanan.github.io</string>
     <string name="launchUrl" translatable="false">https://webdevsaravanan.github.io/ig-reel-saver/</string>
-    <string name="launcherName" translatable="false">ig-reels</string>
+    <string name="launcherName" translatable="false">ig-reel-saver</string>
     <string name="orientation" translatable="false">default</string>
     <string name="providerAuthority" translatable="false">io.github.webdevsaravanan.twa.fileprovider</string>
+    <string name="shareTarget" translatable="false">{\"action\":\"https://webdevsaravanan.github.io/ig-reel-saver/\",\"method\":\"GET\",\"params\":{\"title\":\"title\",\"text\":\"text\",\"url\":\"url\"}}</string>
     <string name="webManifestUrl" translatable="false">https://webdevsaravanan.github.io/ig-reel-saver/manifest.webmanifest</string>
 </resources>
