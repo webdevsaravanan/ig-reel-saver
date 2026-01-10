@@ -16,9 +16,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     //this.results = this.storage.getAll();
 
-    if (localStorage.getItem('dark') === '1') {
+    //if (localStorage.getItem('dark') === '1') {
       document.body.classList.add('dark');
-    }
+    //}
     this.route.queryParams.subscribe(params => {
       this.isFavoriteView = params['view'] === 'favorite';
       if(params['searchQuery'])
@@ -31,16 +31,16 @@ export class HomeComponent implements OnInit {
    load() {
     const all = this.storage.getAll();
     this.results = this.isFavoriteView
-      ? all.filter(r => r.favorite)
-      : all;
+      ? all.filter(r => r.favorite).sort((a, b) => b.createdAt - a.createdAt)
+      : all.sort((a, b) => b.createdAt - a.createdAt);
   }
 
   search(v: string) {
     //this.results = this.storage.search(v);
     const data = this.storage.search(v);
     this.results = this.isFavoriteView
-      ? data.filter(r => r.favorite)
-      : data;
+      ? data.filter(r => r.favorite).sort((a, b) => b.createdAt - a.createdAt)
+      : data.sort((a, b) => b.createdAt - a.createdAt);
   }
 
   open(r: any) {

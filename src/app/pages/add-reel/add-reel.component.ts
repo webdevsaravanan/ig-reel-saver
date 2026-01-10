@@ -7,12 +7,17 @@ import { ReelStorageService } from '../../services/reel-storage.service';
 })
 export class AddReelComponent implements OnInit {
   reelUrl = ''; title = ''; hashtags = '';
+  reelUrlInput: any;
+  isReelUrlDisabled = false;
   constructor(private route: ActivatedRoute, private storage: ReelStorageService, private router: Router) {}
   ngOnInit() {
     if (localStorage.getItem('dark') === '1') {
       document.body.classList.add('dark');
     }
-    this.reelUrl = this.route.snapshot.queryParamMap.get('reelUrl') || '';
+    if(this.route.snapshot.queryParamMap.get('reelUrl')){
+      this.reelUrl = this.route.snapshot.queryParamMap.get('reelUrl') || '';
+      this.isReelUrlDisabled = true;
+    }
   }
   save() {
     this.storage.save({

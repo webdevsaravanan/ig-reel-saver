@@ -1,9 +1,10 @@
-<div class="d-flex justify-content-between align-items-center mb-3">
-    <h5 class="fw-bold mb-0">Saved Reel</h5>
-
+<div class="d-flex justify-content-between align-items-center mb-1">
+    <div class="flex-fill text-center">
+      <img src="/assets/logo.png" alt="Logo"   style="height: 50px;margin-top: 2%;" />
+    </div>
     <!-- Dark mode toggle -->
     <button class="btn btn-sm btn-outline-light"
-            (click)="toggleDarkMode()">
+            (click)="toggleDarkMode()" [hidden]="isHidden">
       🌓
     </button>
   </div>
