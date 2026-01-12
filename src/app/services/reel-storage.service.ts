@@ -25,20 +25,20 @@ export class ReelStorageService {
     if(isFavoriteView) return db.reels.filter((reel: Reel) => reel.favorite === true && (reel.title.toLowerCase().includes(t) || reel.hashtags.includes(t))).toArray();
     return db.reels.filter((reel: Reel) => reel.title.toLowerCase().includes(t) || reel.hashtags.includes(t)).toArray();
   }
-  getById(id: string) {
-     return db.reels.get(id);
+  getById(id: string){
+     return db.reels.filter((reel:Reel)=>reel.id===id).toArray();
   }
   getFavorites() {
     return db.reels.filter((reel: Reel) => reel.favorite === true).toArray();
   }
-  update(reel: any) {
+  update(reel: any,updateFav:boolean=false) {
     db.reels.update(reel.id, {
       id: reel.id,
       reelUrl: reel.reelUrl,
       title: reel.title,
       favorite: reel.favorite,
       hashtags: reel.hashtags,
-      createdAt: Date.now()
+      createdAt: updateFav?reel.createdAt:Date.now()
     });
   }
 

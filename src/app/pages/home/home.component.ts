@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ReelStorageService } from '../../services/reel-storage.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router  } from '@angular/router';
 
-@Component({
+@Component({  
   templateUrl: './home.component.html'
 })
 export class HomeComponent implements OnInit {
@@ -10,8 +10,9 @@ export class HomeComponent implements OnInit {
   results: any[] = [];
   private swipeX = 0;
   isFavoriteView = false;
+  deleteId: string="";
 
-  constructor(private storage: ReelStorageService,private route: ActivatedRoute) {}
+  constructor(private storage: ReelStorageService,private route: ActivatedRoute,private router: Router) {}
 
   ngOnInit() {
     //if (localStorage.getItem('dark') === '1') {
@@ -42,7 +43,11 @@ export class HomeComponent implements OnInit {
       return;
     }
   }
-
+  editThisReel(id:string){
+this.router.navigate(['/add'], {
+            queryParams: { editReelId: id }
+          });
+  }
   async search(v: string) {
     const data = this.storage.search(v,this.isFavoriteView);
      this.results = await data
@@ -55,7 +60,7 @@ export class HomeComponent implements OnInit {
   /* ⭐ Favorite */
   toggleFavorite(r: any) {
     r.favorite = !r.favorite;
-    this.storage.update(r);
+    this.storage.update(r,true);
   }
 
   /* 🗑 Swipe-to-delete */
@@ -65,9 +70,20 @@ export class HomeComponent implements OnInit {
 
   async endSwipe(e: TouchEvent, r: any) {
     const delta = e.changedTouches[0].clientX - this.swipeX;
-    if (delta < -80 && confirm('Delete this reel?')) {
-      this.storage.delete(r.id);
-      this.load();
+    if (delta < -80 ) {
+      this.deleteId=r.id;
+      const modal = new (window as any).bootstrap.Modal(
+                  document.getElementById('deleteModal')
+                  );
+      modal.show();     
     }
   }
+  confirmDelete() {
+      this.storage.delete(this.deleteId);
+      this.load();
+       const modal = (window as any).bootstrap.Modal.getInstance(
+    document.getElementById('deleteModal')
+  );
+  modal.hide();
+    }
 }
