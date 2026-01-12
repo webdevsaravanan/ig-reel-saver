@@ -14,7 +14,7 @@
 
       <div class="modal-footer border-0">
         <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button class="btn btn-danger" (click)="confirmDelete()">Delete</button>
+        <button class="btn btn-danger" (click)="confirmDelete()">Remove</button>
       </div>
 
     </div>
@@ -43,13 +43,13 @@
           <div class="row">
             <div class="col-1 d-flex">
             <button
-              class="btn btn-sm"
+              class="btn btn-sm edit"
               (click)="editThisReel(r.id); $event.stopPropagation()" >✏️
             </button>
             <!-- Favorite -->
             <div class="col-1">
             <button
-              class="btn btn-sm"
+              class="btn btn-sm star"
               (click)="toggleFavorite(r); $event.stopPropagation()">
               {{ r.favorite ? '⭐' : '☆' }}
             </button>
