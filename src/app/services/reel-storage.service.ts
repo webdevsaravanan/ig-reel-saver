@@ -24,8 +24,11 @@ export class ReelStorageService {
     if (!term && isFavoriteView) return this.getFavorites();
     if (!term && !isFavoriteView) return this.getAll();
     const t = term.toLowerCase();
-    if(isFavoriteView) return db.reels.filter((reel: Reel) => reel.favorite === true && (reel.title.toLowerCase().includes(t) || reel.hashtags.includes(t))).toArray();
-    return db.reels.filter((reel: Reel) => reel.title.toLowerCase().includes(t) || reel.hashtags.includes(t)).toArray();
+    if(isFavoriteView) return db.reels.filter((reel: Reel) => reel.favorite === true && (reel.title.toLowerCase().includes(t) || reel.hashtags.some(h => h.toLowerCase().includes(t))
+)).toArray();
+    return db.reels.filter((reel: Reel) => reel.title.toLowerCase().includes(t) || reel.hashtags.some(h => h.toLowerCase().includes(t))
+).toArray();
+
   }
   getById(id: string){
      return db.reels.filter((reel:Reel)=>reel.id===id).toArray();
