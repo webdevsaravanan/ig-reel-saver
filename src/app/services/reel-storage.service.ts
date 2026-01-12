@@ -5,6 +5,8 @@ import { db, Reel } from '../models/db.model';
 const KEY = 'saved_reels';
 @Injectable({ providedIn: 'root' })
 export class ReelStorageService {
+  results: any[] = [];
+  isFavoriteView = false;
   getAll(){
     return db.reels.orderBy('createdAt').reverse().toArray();
   }

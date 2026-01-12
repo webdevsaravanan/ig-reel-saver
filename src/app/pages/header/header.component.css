@@ -1,9 +1,16 @@
 :host {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 1;
+  left: 1;
   width: 100%;
   z-index: 1000;
   background-color: black;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+#search::placeholder {
+      color: #bbb;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    #search::focus{
+      border-color:none;
+    }

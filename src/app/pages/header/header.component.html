@@ -1,10 +1,16 @@
-<div class="d-flex justify-content-between align-items-center mb-1">
-    <div class="flex-fill text-center">
-      <img src="assets/logo.png" alt="Logo" style="height: 50px;margin-top: 2%;" />
+<div class="container-fill">
+  <div class="row">
+    <div class="col-2">
+      <img src="assets/logo.png" alt="Logo" style="height: 45px;" />
     </div>
-    <!-- Dark mode toggle -->
-    <button class="btn btn-sm btn-outline-light"
-            (click)="toggleDarkMode()" [hidden]="isHidden">
-      🌓
-    </button>
+    <div class="col-9" [hidden]="isHidden">
+    <div style="background-color: black;"><input
+    #SearchText
+    id="search"
+    name="search"
+    class="form-control mb-3 bg-dark border-0 text-white"
+    placeholder="search reel or #tag" (input)="search(SearchText.value)"
+  /></div>
+    </div>
+  </div>
   </div>

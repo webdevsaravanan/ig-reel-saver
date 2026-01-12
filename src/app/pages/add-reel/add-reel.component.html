@@ -14,12 +14,14 @@
   class="form-control mb-2"
   placeholder="Title"
   [(ngModel)]="title"
+   maxlength="30"
 />
 
 <input
   class="form-control mb-3"
   placeholder="Hashtags (comma separated)"
   [(ngModel)]="hashtags"
+   maxlength="30"
 />
 
 <button class="btn btn-primary w-100" (click)="save()">

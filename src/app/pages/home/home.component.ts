@@ -6,12 +6,9 @@ import { ActivatedRoute, Router  } from '@angular/router';
   templateUrl: './home.component.html'
 })
 export class HomeComponent implements OnInit {
-
-  results: any[] = [];
   private swipeX = 0;
-  isFavoriteView = false;
   deleteId: string="";
-
+  resultsData: any[] = [];
   constructor(private storage: ReelStorageService,private route: ActivatedRoute,private router: Router) {}
 
   ngOnInit() {
@@ -19,7 +16,7 @@ export class HomeComponent implements OnInit {
       document.body.classList.add('dark');
     //}
     this.route.queryParams.subscribe(params => {
-      this.isFavoriteView = params['view'] === 'favorite';
+      this.storage.isFavoriteView = params['view'] === 'favorite';
       if(params['searchQuery'])
       {
         this.search(params['searchQuery'] || '');
@@ -30,15 +27,15 @@ export class HomeComponent implements OnInit {
   }
   
    load() {
-    if(this.isFavoriteView){
+    if(this.storage.isFavoriteView){
       this.storage.getFavorites().then(favs => {
-        this.results = favs;
+        this.resultsData=favs;
       });
       return;
     }
     else{
       this.storage.getAll().then(all => {
-        this.results = all;
+        this.resultsData= all;
       });
       return;
     }
@@ -49,8 +46,8 @@ this.router.navigate(['/add'], {
           });
   }
   async search(v: string) {
-    const data = this.storage.search(v,this.isFavoriteView);
-     this.results = await data
+    const data = this.storage.search(v,this.storage.isFavoriteView);
+     this.resultsData= await data
   }
 
   open(r: any) {

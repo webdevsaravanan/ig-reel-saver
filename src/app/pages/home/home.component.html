@@ -1,32 +1,15 @@
 <div class="container py-3" style="padding-top: 80px;">
 
   <!-- Header -->
-    <app-header></app-header>
-<div style="margin-top: 25%;">
-  <!-- Search box -->
-  <style>
-    #search::placeholder {
-      color: #bbb;
-      font-style: italic;
-    }
-  </style>
-  <div style="background-color: black;"><input
-    #SearchText
-    id="search"
-    name="search"
-    class="form-control mb-3 bg-dark text-light border-0"
-    style="position: fixed; top: 8%; left: 3px; right: 15px; width: calc(100% - 11px); z-index: 999;"
-    placeholder="search reel or #hashtag.."
-    (input)="search(SearchText.value)"
-  /></div>
-
+    <app-header (reel)="search($event)"></app-header>
+<div style="margin-top: 14%;">
   <!-- Reel list -->
-  <div style="padding-top: 120px;" *ngFor="let r of results"
+  <div style="padding-top: 120px;" *ngFor="let r of resultsData"
        class="ig-card p-3 mb-2"
        (touchstart)="startSwipe($event, r)"
        (touchend)="endSwipe($event, r)">
 
-    <div class="container-fill " >
+    <div class="container-fill" >
       <!-- Title & hashtags -->
       <div class="row" (click)="open(r)">
         <div class="col-9">
