@@ -1,7 +1,27 @@
-<div class="container py-3" style="padding-top: 80px;">
+<app-header (reel)="search($event)"></app-header>
+<div class="modal fade" id="deleteModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white rounded-4">
 
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Remove</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        Are you sure you want to remove this reel?
+      </div>
+
+      <div class="modal-footer border-0">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-danger" (click)="confirmDelete()">Delete</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container py-3" style="padding-top: 80px;">
   <!-- Header -->
-    <app-header (reel)="search($event)"></app-header>
 <div style="margin-top: 14%;">
   <!-- Reel list -->
   <div style="padding-top: 120px;" *ngFor="let r of resultsData"
@@ -37,26 +57,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-<div class="modal fade" id="deleteModal" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content bg-dark text-white rounded-4">
-
-      <div class="modal-header border-0">
-        <h5 class="modal-title">Remove</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body text-center">
-        Are you sure you want to remove this reel?
-      </div>
-
-      <div class="modal-footer border-0">
-        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button class="btn btn-danger" (click)="confirmDelete()">Delete</button>
-      </div>
-
     </div>
   </div>
 </div>

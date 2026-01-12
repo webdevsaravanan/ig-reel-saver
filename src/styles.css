@@ -6,6 +6,11 @@
   --ig-muted: #a8a8a8;
   --ig-accent: #0095f6;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 
 /* Dark mode */
 body.dark {
