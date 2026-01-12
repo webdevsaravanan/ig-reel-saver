@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ReelStorageService } from '../../services/reel-storage.service';
+import { MigrationService } from '../../services/migration.service';
 import { Router } from '@angular/router';  
 @Component({
   templateUrl: './profile.component.html',
@@ -11,12 +12,12 @@ export class ProfileComponent implements OnInit {
   favorites = 0;
   hashtagStats: { name: string; count: number }[] = [];
 
-  constructor(private storage: ReelStorageService, private router: Router) {}
-  ngOnInit() {
+  constructor(private storage: ReelStorageService, private router: Router,private migrationService: MigrationService) {}
+  async ngOnInit() {
     if (localStorage.getItem('dark') === '1') {
       document.body.classList.add('dark');
     }
-    const reels = this.storage.getAll();
+    const reels = await this.storage.getAll();
 
     this.total = reels.length;
     this.favorites = reels.filter(r => r.favorite).length;
@@ -33,6 +34,9 @@ export class ProfileComponent implements OnInit {
       .sort((a, b) => b.count - a.count);
 
       
+  }
+  migrateData() { 
+    this.migrationService.migrateLocalStorageToDexie();
   }
   openHashtag(hashtag: string) {
     this.router.navigate(['/'], { queryParams: { searchQuery: hashtag } });

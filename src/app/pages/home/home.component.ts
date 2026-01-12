@@ -14,33 +14,38 @@ export class HomeComponent implements OnInit {
   constructor(private storage: ReelStorageService,private route: ActivatedRoute) {}
 
   ngOnInit() {
-    //this.results = this.storage.getAll();
-
     //if (localStorage.getItem('dark') === '1') {
       document.body.classList.add('dark');
     //}
     this.route.queryParams.subscribe(params => {
       this.isFavoriteView = params['view'] === 'favorite';
       if(params['searchQuery'])
-      {this.search(params['searchQuery'] || '');
+      {
+        this.search(params['searchQuery'] || '');
       return;
       }
       this.load();
     });
   }
+  
    load() {
-    const all = this.storage.getAll();
-    this.results = this.isFavoriteView
-      ? all.filter(r => r.favorite).sort((a, b) => b.createdAt - a.createdAt)
-      : all.sort((a, b) => b.createdAt - a.createdAt);
+    if(this.isFavoriteView){
+      this.storage.getFavorites().then(favs => {
+        this.results = favs;
+      });
+      return;
+    }
+    else{
+      this.storage.getAll().then(all => {
+        this.results = all;
+      });
+      return;
+    }
   }
 
-  search(v: string) {
-    //this.results = this.storage.search(v);
-    const data = this.storage.search(v);
-    this.results = this.isFavoriteView
-      ? data.filter(r => r.favorite).sort((a, b) => b.createdAt - a.createdAt)
-      : data.sort((a, b) => b.createdAt - a.createdAt);
+  async search(v: string) {
+    const data = this.storage.search(v,this.isFavoriteView);
+     this.results = await data
   }
 
   open(r: any) {
@@ -58,11 +63,11 @@ export class HomeComponent implements OnInit {
     this.swipeX = e.changedTouches[0].clientX;
   }
 
-  endSwipe(e: TouchEvent, r: any) {
+  async endSwipe(e: TouchEvent, r: any) {
     const delta = e.changedTouches[0].clientX - this.swipeX;
     if (delta < -80 && confirm('Delete this reel?')) {
       this.storage.delete(r.id);
-      this.results = this.storage.getAll();
+      this.load();
     }
   }
 }

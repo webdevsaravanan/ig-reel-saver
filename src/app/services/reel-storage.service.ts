@@ -1,36 +1,49 @@
 import { Injectable } from '@angular/core';
 import { ReelItem } from '../models/reel.model';
+import { db, Reel } from '../models/db.model';
+
 const KEY = 'saved_reels';
 @Injectable({ providedIn: 'root' })
 export class ReelStorageService {
-  getAll(): ReelItem[] {
-    return JSON.parse(localStorage.getItem(KEY) || '[]');
+  getAll(){
+    return db.reels.orderBy('createdAt').reverse().toArray();
   }
   save(reel: ReelItem) {
-    const all = this.getAll();
-    all.push(reel);
-    localStorage.setItem(KEY, JSON.stringify(all));
+    db.reels.add({
+    id: reel.id,
+    reelUrl: reel.reelUrl,
+    title: reel.title,
+    favorite: false,
+    hashtags: reel.hashtags,
+    createdAt: Date.now()
+  });
   }
-  search(term: string): ReelItem[] {
-    if (!term) return this.getAll();
+  search(term: string, isFavoriteView: boolean ) {
+    if (!term && isFavoriteView) return this.getFavorites();
+    if (!term && !isFavoriteView) return this.getAll();
     const t = term.toLowerCase();
-    return this.getAll().filter(r =>
-      r.title.toLowerCase().includes(t) ||
-      r.hashtags.some(h => h.includes(t))
-    );
+    if(isFavoriteView) return db.reels.filter((reel: Reel) => reel.favorite === true && (reel.title.toLowerCase().includes(t) || reel.hashtags.includes(t))).toArray();
+    return db.reels.filter((reel: Reel) => reel.title.toLowerCase().includes(t) || reel.hashtags.includes(t)).toArray();
   }
   getById(id: string) {
-    return this.getAll().find(r => r.id === id);
+     return db.reels.get(id);
+  }
+  getFavorites() {
+    return db.reels.filter((reel: Reel) => reel.favorite === true).toArray();
+  }
+  update(reel: any) {
+    db.reels.update(reel.id, {
+      id: reel.id,
+      reelUrl: reel.reelUrl,
+      title: reel.title,
+      favorite: reel.favorite,
+      hashtags: reel.hashtags,
+      createdAt: Date.now()
+    });
   }
 
-  update(reel: any) {
-  const all = this.getAll().map(r => r.id === reel.id ? reel : r);
-  localStorage.setItem('saved_reels', JSON.stringify(all));
-}
-
 delete(id: string) {
-  const all = this.getAll().filter(r => r.id !== id);
-  localStorage.setItem('saved_reels', JSON.stringify(all));
+  db.reels.delete(id);
 }
 
 }

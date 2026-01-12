@@ -4,5 +4,5 @@ export interface ReelItem {
   hashtags: string[];
   reelUrl: string;
   createdAt: number;
-  favorite?: boolean;
+  favorite: boolean;
 }

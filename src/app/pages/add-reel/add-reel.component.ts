@@ -25,6 +25,7 @@ export class AddReelComponent implements OnInit {
       title: this.title,
       hashtags: this.hashtags.split(',').map(h => h.trim().toLowerCase()),
       reelUrl: this.reelUrl,
+      favorite: false,
       createdAt: Date.now()
     });
     this.router.navigate(['/']);
