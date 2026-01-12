@@ -24,9 +24,9 @@ export class ReelStorageService {
     if (!term && isFavoriteView) return this.getFavorites();
     if (!term && !isFavoriteView) return this.getAll();
     const t = term.toLowerCase();
-    if(isFavoriteView) return db.reels.filter((reel: Reel) => reel.favorite === true && (reel.title.toLowerCase().includes(t) || reel.hashtags.some(h => h.toLowerCase().includes(t))
+    if(isFavoriteView) return db.reels.orderBy('createdAt').reverse().filter((reel: Reel) => reel.favorite === true && (reel.title.toLowerCase().includes(t) || reel.hashtags.some(h => h.toLowerCase().includes(t))
 )).toArray();
-    return db.reels.filter((reel: Reel) => reel.title.toLowerCase().includes(t) || reel.hashtags.some(h => h.toLowerCase().includes(t))
+    return db.reels.orderBy('createdAt').reverse().filter((reel: Reel) => reel.title.toLowerCase().includes(t) || reel.hashtags.some(h => h.toLowerCase().includes(t))
 ).toArray();
 
   }
@@ -34,7 +34,7 @@ export class ReelStorageService {
      return db.reels.filter((reel:Reel)=>reel.id===id).toArray();
   }
   getFavorites() {
-    return db.reels.filter((reel: Reel) => reel.favorite === true).toArray();
+    return db.reels.orderBy('createdAt').reverse().filter((reel: Reel) => reel.favorite === true).toArray();
   }
   update(reel: any,updateFav:boolean=false) {
     db.reels.update(reel.id, {
