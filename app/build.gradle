@@ -24,8 +24,8 @@ def twaManifest = [
     applicationId: 'io.github.webdevsaravanan.twa',
     hostName: 'webdevsaravanan.github.io', // The domain being opened in the TWA.
     launchUrl: '/ig-reel-saver/', // The start path for the TWA. Must be relative to the domain.
-    name: 'ig-reel-saver', // The application name.
-    launcherName: 'ig-reel-saver', // The name shown on the Android Launcher.
+    name: 'SaveIt', // The application name.
+    launcherName: 'SaveIt', // The name shown on the Android Launcher.
     themeColor: '#1976D2', // The color used for the status bar.
     themeColorDark: '#000000', // The color used for the dark status bar.
     navigationColor: '#000000', // The color used for the navigation bar.
@@ -57,8 +57,8 @@ android {
         applicationId "io.github.webdevsaravanan.twa"
         minSdkVersion 21
         targetSdkVersion 35
-        versionCode 10
-        versionName "Beta"
+        versionCode 11
+        versionName "CR7"
 
         // The name for the application
         resValue "string", "appName", twaManifest.name

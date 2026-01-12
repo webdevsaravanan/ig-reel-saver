@@ -11,8 +11,8 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 10,
-      "versionName": "Beta",
+      "versionCode": 11,
+      "versionName": "CR7",
       "outputFile": "AndroidManifest.xml"
     }
   ],

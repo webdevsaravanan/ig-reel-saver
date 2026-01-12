@@ -24,7 +24,7 @@
     <!-- Value from default config. -->
     <integer name="splashScreenFadeOutDuration">300</integer>
     <!-- Value from default config. -->
-    <string name="appName" translatable="false">ig-reel-saver</string>
+    <string name="appName" translatable="false">SaveIt</string>
     <!-- Value from default config. -->
     <string name="fallbackType" translatable="false">customtabs</string>
     <!-- Value from default config. -->
@@ -36,7 +36,7 @@
     <!-- Value from default config. -->
     <string name="launchUrl" translatable="false">https://webdevsaravanan.github.io/ig-reel-saver/</string>
     <!-- Value from default config. -->
-    <string name="launcherName" translatable="false">ig-reel-saver</string>
+    <string name="launcherName" translatable="false">SaveIt</string>
     <!-- Value from default config. -->
     <string name="orientation" translatable="false">default</string>
     <!-- Value from default config. -->
