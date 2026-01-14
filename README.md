@@ -57,8 +57,13 @@ IG Reel Saver gives you a **personal Reel vault**:
 ---
 
 ## 🔄 How Reel Sharing Works
+<p align="center">
+  <img src="saveit.gif" width="320" alt="IG Reel Saver Demo"/>
+</p>
 
-Instagram → Share → IG Reel Saver → Stored in IndexedDB → View anytime
+<p align="center">
+  <b>Instagram → Share → SaveIt→ Saved</b>
+</p>
 
 The app registers itself as a **Web Share Target** so Instagram can send Reel URLs directly into it.
 
