@@ -1,4 +1,4 @@
-# SaveIt - IG Reel Bookmarker App📌
+# SaveIt - IG Reels 📌 Bookmarker App 📱
 
 **IG Reel Saver** is a web & Android app that lets you **receive Instagram Reel shares and bookmark them automatically** so you can build your own personal Reel library.
 
@@ -11,7 +11,7 @@ Built with **Angular + PWA + Trusted Web Activity (TWA)**.
 Instead of manually copying Instagram Reel links, this app allows you to:
 
 1. Open Instagram  
-2. Tap **Share → IG Reel Saver**  
+2. Tap **Share → SaveIt App**  
 3. The Reel is instantly **saved (bookmarked)** inside the app  
 
 No copy-paste needed.
