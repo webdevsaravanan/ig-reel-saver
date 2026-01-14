@@ -1,59 +1,67 @@
-# IgReelSaver
+# SaveIt - IG Reel Bookmarker App📌
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+**IG Reel Saver** is a web & Android app that lets you **receive Instagram Reel shares and bookmark them automatically** so you can build your own personal Reel library.
 
-## Development server
+Built with **Angular + PWA + Trusted Web Activity (TWA)**.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 🚀 What This App Does
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Instead of manually copying Instagram Reel links, this app allows you to:
 
-## Code scaffolding
+1. Open Instagram  
+2. Tap **Share → IG Reel Saver**  
+3. The Reel is instantly **saved (bookmarked)** inside the app  
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+No copy-paste needed.
 
-```bash
-ng generate component component-name
-```
+This app does **not download videos** — it only saves Reel links.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 📲 Key Features
 
-## Building
+- 🔗 Accepts Instagram **Share Intent**
+- 📌 Automatically bookmarks shared Reels
+- 🗂 Stores all Reels in one organized list
+- ⚡ Fast, offline-ready local storage
+- 📱 Works as:
+  - Web App  
+  - PWA  
+  - Android Trusted Web App (no browser UI)
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 🧠 Why This App Exists
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Instagram’s “Saved” section is limited and hard to organize.  
+IG Reel Saver gives you a **personal Reel vault**:
 
-## Running unit tests
+- No login
+- No ads
+- No tracking
+- Your data stays on your device
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## 🛠 Tech Stack
 
-## Running end-to-end tests
+- Angular
+- TypeScript
+- Bootstrap
+- IndexedDB (Dexie)
+- PWA
+- Trusted Web Activity (TWA)
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## 🔄 How Reel Sharing Works
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Instagram → Share → IG Reel Saver → Stored in IndexedDB → View anytime
 
-## Additional Resources
+The app registers itself as a **Web Share Target** so Instagram can send Reel URLs directly into it.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+
