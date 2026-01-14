@@ -5,7 +5,18 @@
 Built with **Angular + PWA + Trusted Web Activity (TWA)**.
 
 ---
+## 🔄 How Reel Sharing Works
+<p align="center">
+  <img src="saveit.gif" width="320" alt="IG Reel Saver Demo"/>
+</p>
 
+<p align="center">
+  <b>Instagram → Share → SaveIt→ Saved</b>
+</p>
+
+The app registers itself as a **Web Share Target** so Instagram can send Reel URLs directly into it.
+
+---
 ## 🚀 What This App Does
 
 Instead of manually copying Instagram Reel links, this app allows you to:
@@ -53,19 +64,6 @@ IG Reel Saver gives you a **personal Reel vault**:
 - IndexedDB (Dexie)
 - PWA
 - Trusted Web Activity (TWA)
-
----
-
-## 🔄 How Reel Sharing Works
-<p align="center">
-  <img src="saveit.gif" width="320" alt="IG Reel Saver Demo"/>
-</p>
-
-<p align="center">
-  <b>Instagram → Share → SaveIt→ Saved</b>
-</p>
-
-The app registers itself as a **Web Share Target** so Instagram can send Reel URLs directly into it.
 
 ---
 
