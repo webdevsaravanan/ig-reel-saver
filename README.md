@@ -3,8 +3,28 @@
 **IG Reel Saver** is a web & Android app that lets you **receive Instagram Reel shares and bookmark them automatically** so you can build your own personal Reel library.
 
 Built with **Angular + PWA + Trusted Web Activity (TWA)**.
+---
+## 🔍 Smart Reel Search
 
-<a></a>
+Instagram allows saving Reels into folders, but it does not provide any way to **search** those saved Reels.
+
+**IG Reel Saver solves this problem.**
+
+When you share a Reel from Instagram to this app:
+- The app asks you to enter a **Title**
+- And add **Hashtags**
+
+These are saved along with the Reel link.  
+Later, you can easily **search your entire Reel collection** using:
+- Reel title  
+- Hashtags  
+
+This turns your saved Reels into a **searchable personal knowledge base**, not just a random list.
+
+Example:
+> Saved: *“AI Prompt Tips”*  
+> Hashtags: `#ai #chatgpt #learning`  
+Now you can find it anytime by searching **ai**, **chatgpt**, or **prompt**.
 ---
 ## 🔄 How Reel Sharing Works
 <p align="center">
