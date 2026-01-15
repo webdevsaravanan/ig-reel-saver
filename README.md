@@ -4,6 +4,7 @@
 
 Built with **Angular + PWA + Trusted Web Activity (TWA)**.
 
+<a></a>
 ---
 ## 🔄 How Reel Sharing Works
 <p align="center">
@@ -16,6 +17,18 @@ Built with **Angular + PWA + Trusted Web Activity (TWA)**.
 
 The app registers itself as a **Web Share Target** so Instagram can send Reel URLs directly into it.
 
+---
+## 📥 Download Android App
+
+You can install **IG Reel Saver** directly on your Android device:
+
+👉 **[Download SaveIt v1.0 APK](https://github.com/webdevsaravanan/ig-reel-saver/raw/refs/heads/main/SaveIt.v1.0.apk)**
+
+After downloading:
+1. Open the APK
+2. Allow **Install from unknown sources**
+3. Install and start bookmarking Instagram Reels 🚀
+   
 ---
 ## 🚀 What This App Does
 
